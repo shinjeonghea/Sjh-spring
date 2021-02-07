@@ -26,4 +26,24 @@ public class HelloController {
     public String helloString(@RequestParam("name") String name){
         return "hello" + name; // 이렇게 하면 view가 없다 그냥 그대로 내려감 즉, template을 거치지 않고 여기서 끝냄
     }
+
+    @GetMapping("hello-api")
+    @ResponseBody
+    public Hello helloApi(@RequestParam("name") String name){
+        Hello hello = new Hello();
+        hello.setName(name);
+        return hello;
+    }
+
+    static class Hello{
+        private String name;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
 }
