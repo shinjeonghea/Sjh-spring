@@ -9,7 +9,7 @@ import java.awt.*;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+//@Service
 public class MemberService {
 
     //원래//private final MemberRepository memberRepository = new MemoryMemberRepository();
