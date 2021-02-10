@@ -3,11 +3,13 @@ package SJH.Sjhspring.service;
 import SJH.Sjhspring.domain.Member;
 import SJH.Sjhspring.repository.MemberRepository;
 import SJH.Sjhspring.repository.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
 import java.awt.*;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
     //원래//private final MemberRepository memberRepository = new MemoryMemberRepository();
