@@ -4,12 +4,14 @@ import SJH.Sjhspring.domain.Member;
 import SJH.Sjhspring.repository.MemberRepository;
 import SJH.Sjhspring.repository.MemoryMemberRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.awt.*;
 import java.util.List;
 import java.util.Optional;
 
 //@Service
+@Transactional
 public class MemberService {
 
     //원래//private final MemberRepository memberRepository = new MemoryMemberRepository();
