@@ -1,5 +1,6 @@
 package SJH.Sjhspring;
 
+import SJH.Sjhspring.aop.TimeTraceAop;
 import SJH.Sjhspring.repository.MemberRepository;
 import SJH.Sjhspring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +44,11 @@ public class SpringConfig {
        // return new JdbcMemberRepository(dataSource);
         //return new JdbcMemberRepository(dataSource);
         //return new JpaMemberRepository(em);
+    //}
+
+    //방법1.스프링 빈에 등록하여 aop사용하기
+    //@Bean
+    // public TimeTraceAop timeTraceAop(){
+    //    return new TimeTraceAop();
     //}
 }
