@@ -11,6 +11,8 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 
+
+// 순수 단위 테스트
 class MemberServiceTest {
 
     //테스트는 한글로 해도 된다.
