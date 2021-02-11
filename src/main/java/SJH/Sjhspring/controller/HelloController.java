@@ -3,6 +3,7 @@ package SJH.Sjhspring.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -14,6 +15,7 @@ public class HelloController {
         model.addAttribute("data","hello!");
         return "hello"; //hello라는 이름을 가진 html로가라는 뜻
     }
+
 
     @GetMapping("hello-mvc")
     public String helloMvc(@RequestParam("name") String name, Model model) { //외부에서 파라미터를 받는다.
