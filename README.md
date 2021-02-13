@@ -1,5 +1,7 @@
 # Inflearn 스프링 입문 강의
 
+**​:writing_hand:​[강의 실습을 제외한 추가 개념 정리](https://github.com/shinjeonghea/Inflearn-Spring)**
+
 ### 섹션 0. 강의 소개
 - 강의 소개
 - 강의 자료
